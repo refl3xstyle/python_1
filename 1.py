@@ -1,10 +1,24 @@
-#Вводим число дней
-year = int(input())
+def check_year(year):
+    if year % 4 != 0 or (year % 100 == 0 and year % 400 != 0):
+        return print('{} - Обычный год'.format(year))
+    else:
+        return print('{} - Високосный год'.format(year))
 
-# Сразу проверяются все условия.
-# Если год не делится на 4 или делится на 100, но не на 400,
-# то он обычный. Во всех остальных случаях - високосный.
-if year % 4 != 0 or (year % 100 == 0 and year % 400 != 0):
-    print("Обычный год")
+# Вводим число дней
+try:
+    flag = int(input('Выберите из один вариантов программы: \n1 - посмотреть конкретный год\n2 - посмотреть диапозон лет\n'))
+except ValueError:
+    print('Введите только 1 или 2')
+
+if (flag == 1):
+    year = int(input('Введите первое число года: '))
+    check_year(year)
 else:
-    print("Високосный год")
+    start = int(input('Введите первое число года: '))
+    end = int(input('Введите первое число года: '))
+    for i in range(start,end):
+        check_year(i)
+
+
+
+
