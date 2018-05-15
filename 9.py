@@ -1,6 +1,5 @@
 import numpy as np
-
-mas = np.random.randint(30, size=int(input('Введите количество элементов в массиве: ')))
+mas = np.random.randint(0,1000, int(input('Введите количество элементов в массиве: ')))
 
 print('Элементы сгенерированного массива: ')
 for i in range(0,len(mas)):
