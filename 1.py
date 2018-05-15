@@ -4,7 +4,7 @@ def check_year(year):
     else:
         return print('{} - Високосный год'.format(year))
 
-# Вводим число дней
+# Выбор варианта рассчета
 try:
     flag = int(input('Выберите из один вариантов программы: \n1 - посмотреть конкретный год\n2 - посмотреть диапозон лет\n'))
 except ValueError:
