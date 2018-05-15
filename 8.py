@@ -10,4 +10,4 @@ for i in range(1, len(mas) - 1):
     else:
         str = '{color_wrong}Не выполняется!{endcolor}'.format(color_wrong='\x1b[1;33;91m', endcolor='\x1b[0m')
 
-print('\nВсе соседние элементы с одинаковым знаком. Условие: {}'.format(str))
+print('\nCоседние элементы с одинаковым знаком. Условие: {}'.format(str))
